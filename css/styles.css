@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'TheWeddingSignature';
+    src: url(/fonts/the_wedding_signature/TheWeddingSignature-Regular.ttf) format('truetype'); /* Reemplaza 'NombreDelArchivoDeLaFuente.ttf' con el nombre real del archivo de la fuente */
+}
+
+@font-face {
+    font-family: 'boska-bold';
+    src: url(/fonts/Boska-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'boska-medium';
+    src: url(/fonts/Boska-Medium.ttf);
+}
+
+body {
+    /*font-family: 'NombreDeLaFuente', sans-serif; /* Utiliza la fuente en tu diseño */
+    background-color: rgb(221, 206, 204);
+}
+
+
+#banner1 {
+    background-image: url('/img/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center; /* Alinear todo el texto al centro horizontalmente */
+    padding: 100px 0; /* Ajusta el padding según sea necesario */
+    min-height: 800px;
+}
+
+#banner1 h1, #banner1 h2 {
+    font-family: TheWeddingSignature, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
+    padding: 2%;
+    display: block; /* Cambia el display a bloque para que estén en líneas separadas */
+    margin: 0 auto; /* Centra horizontalmente los elementos de texto */
+}
+
+.custom-button {
+    background-color: black; /* Color de fondo */
+    border: none; /* Eliminar borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 50%; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+    transition: background-color 0.3s; /* Transición suave */
+    display: block; /* Hace que el botón sea un bloque */
+    margin: 20px auto; /* Centra vertical y horizontalmente */
+}
+
+.custom-button:hover {
+    background-color: #8FA57A; /* Color de fondo al pasar el mouse */
+}
+
+
+
+
+.versiculo-texto {
+    font-family: 'Roboto', sans-serif; /* Utiliza una fuente elegante */
+    font-size: 18px; /* Tamaño de fuente */
+    text-align: center; /* Justifica el texto */
+    margin-top: 25px; /* Espacio superior */
+    margin-bottom: 50px; /* Espacio inferior */
+    color: #333; /* Color del texto */
+}
+
+.nombres h1{
+    font-family: TheWeddingSignature, sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nombres p{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.palabras h2{
+    font-family: boska-bold, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.palabras p{
+    font-family: boska-medium, sans-serif;
+    font-size: 18px; /* Tamaño de fuente */
+    text-align: center; /* Justifica el texto */
+    margin-top: 25px; /* Espacio superior */
+    margin-bottom: 50px; /* Espacio inferior */
+    color: #333; /* Color del texto */
+}
+
+@media (max-width: 576px) {
+    /* Estilos específicos para dispositivos móviles */
+    #banner1 {
+        padding: 50px 0; /* Reducir el padding para dispositivos móviles */
+    }
+
+    #banner1 h1 {
+        font-size: 24px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    }
+}
