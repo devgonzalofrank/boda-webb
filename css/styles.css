@@ -24,19 +24,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    text-align: center; /* Alinear todo el texto al centro horizontalmente */
-    padding: 100px 0; /* Ajusta el padding según sea necesario */
     min-height: 800px;
-}
-
-#banner1 h1, #banner1 h2 {
-    font-family: TheWeddingSignature, sans-serif;
-    font-size: 100px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para mejorar la legibilidad */
-    padding: 2%;
-    display: block; /* Cambia el display a bloque para que estén en líneas separadas */
-    margin: 0 auto; /* Centra horizontalmente los elementos de texto */
 }
 
 .custom-button {
@@ -96,13 +84,67 @@ body {
     color: #333; /* Color del texto */
 }
 
-@media (max-width: 576px) {
-    /* Estilos específicos para dispositivos móviles */
+.countdown-container {
+    font-family: TheWeddingSignature, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    /*display: inline-block;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo base del botón genérico */
+.generic-button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-family: TheWeddingSignature, sans-serif;
+    background-color: #e0c7c7; /* Color de fondo */
+    /*border: 2px solid #007bff; /* Borde sólido */
+    border-radius: 20px; /* Borde redondeado */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Elimina la subrayado */
+    display: inline-block; /* Elemento en línea */
+    font-size: 100px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition-duration: 0.4s; /* Duración de la transición */
+}
+
+/* Cambio de estilo al pasar el mouse */
+.generic-button:hover {
+    background-color: #d69494; /* Color de fondo al pasar el mouse */
+    border-color: #d69494; /* Color del borde al pasar el mouse */
+}
+/* Estilo del contenedor del botón */
+.button-container {
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
+@media (max-width: 768px) {
     #banner1 {
-        padding: 50px 0; /* Reducir el padding para dispositivos móviles */
+        min-height: 300px; /* Ajustar altura del banner para dispositivos móviles */
     }
 
-    #banner1 h1 {
-        font-size: 24px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    .nombres h1 {
+        font-size: 600%; /* Reducir tamaño de fuente para dispositivos móviles */
+        margin-bottom: 5px; /* Ajustar margen inferior */
+    }
+
+    .nombres p {
+        font-size: 120%; /* Reducir tamaño de fuente para dispositivos móviles */
+    }
+
+    .countdown-container {
+        font-size: 60px; /* Reducir tamaño de fuente para dispositivos móviles */
+        margin-top: 10px; /* Ajustar margen superior */
+        margin-bottom: 10px; /* Ajustar margen inferior */
     }
 }
