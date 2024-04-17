@@ -128,7 +128,7 @@ body {
     text-align: center; /* Centra horizontalmente el contenido */
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 1000px) {
     #banner1 {
         min-height: 300px; /* Ajustar altura del banner para dispositivos móviles */
     }
