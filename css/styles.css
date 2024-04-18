@@ -84,6 +84,11 @@ body {
     color: #333; /* Color del texto */
 }
 
+.prueba-datos {
+    margin-left: 30%;
+    width: 50%;
+}
+
 .countdown-container {
     font-family: TheWeddingSignature, sans-serif;
     font-size: 100px;
@@ -109,11 +114,11 @@ body {
     /*border: 2px solid #007bff; /* Borde sólido */
     border-radius: 20px; /* Borde redondeado */
     color: rgb(0, 0, 0); /* Color del texto */
-    padding: 5px 20px; /* Espaciado interno */
+    padding: 5px 5px; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Elimina la subrayado */
     display: inline-block; /* Elemento en línea */
-    font-size: 100px; /* Tamaño de fuente */
+    font-size: 80px; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar */
     transition-duration: 0.4s; /* Duración de la transición */
 }
