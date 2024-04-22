@@ -218,6 +218,12 @@ body {
 
 
 @media (max-width: 576px){
+
+    .centrar-img{
+        width: auto;
+    }
+
+
     .container{
         flex-direction: column;
     }
