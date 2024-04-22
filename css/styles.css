@@ -215,35 +215,3 @@ body {
         margin-bottom: 10px; /* Ajustar margen inferior */
     }
 }
-
-
-@media (max-width: 576px){
-
-    .centrar-img{
-        width: auto;
-    }
-
-
-    .container{
-        flex-direction: column;
-    }
-
-    .texto-interior div{
-        font-size: 3rem;
-    }
-    
-    .grid-section{
-        grid-template-columns: repeat(1, 90%);
-        grid-template-rows: auto auto;
-        row-gap: 20px;
-    }
-
-    .a1{
-        justify-items: center;
-    }
-
-    .centrar-img img{
-        width: 100%;
-    }
-
-}
