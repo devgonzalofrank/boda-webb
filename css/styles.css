@@ -56,6 +56,17 @@ body {
     background-position: center;
 }
 
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegura que el logo esté sobre la imagen parallax */
+    width: 300px; /* Ancho deseado del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+
 
 ---------------
 
