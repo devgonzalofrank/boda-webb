@@ -195,7 +195,7 @@ body {
     text-align: center; /* Centra horizontalmente el contenido */
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 576px) {
     #banner1 {
         min-height: 300px; /* Ajustar altura del banner para dispositivos móviles */
     }
@@ -213,5 +213,9 @@ body {
         font-size: 60px; /* Reducir tamaño de fuente para dispositivos móviles */
         margin-top: 10px; /* Ajustar margen superior */
         margin-bottom: 10px; /* Ajustar margen inferior */
+    }
+
+    .centrar-img img{
+        width: 100%;
     }
 }
