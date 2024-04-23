@@ -38,46 +38,24 @@ body {
 }
 
 /*Parallax*/
-
-.parallax{
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height:45rem;
-	max-width: 100%;
-	position: relative;
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura deseada */
+    overflow: hidden;
 }
 
-
-/*Imagenes*/
-.img-uno{background-image: url('https://i.ibb.co/vLF9t5J/costanera1.jpg');}
-/*.img-dos{background-image: url('https://i.ibb.co/RP3T3Tb/Foto123.jpg');}
-.img-tres{background-image: url('https://i.ibb.co/Jp8XZfR/home-bg-slider-img1.jpg');}
-.img-cuatro{background-image: url('https://i.ibb.co/VTm3Pbv/5.jpg');}
-.img-cinco{background-image: url('https://i.ibb.co/18CMKnn/DJI-0030-1.png');}*/
-
-.centrar-img{
-	display: flex;
-	justify-content:center;
-    padding-top: 3rem;
-	
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/costanera1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.centrar{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.centrar h1{
-    margin-left: 13%;
-}
-
-.bordes-img iframe{
-    border: 1px solid var(--osucro);
-    border-width: 0.5rem;
-}
 
 ---------------
 
@@ -216,6 +194,14 @@ body {
     }
 
     .centrar-img img{
-        width: 100%;
+        width: 50%;
     }
+}
+
+.parallax-container {
+    height: 60vh; /* Porcentaje de la altura de la ventana gráfica */
+}
+
+.parallax-image {
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
 }

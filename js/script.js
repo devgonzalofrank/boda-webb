@@ -32,8 +32,22 @@ function updateCountdown() {
     document.getElementById('countdown').innerHTML = days + ' días, ' + hours + ' horas, ' + minutes + ' minutos, ' + seconds + ' segundos';
 
     // Actualizar la cuenta regresiva cada segundo
-    setTimeout(updateCountdown, 1000);
+    setTimeout(updateCountdown, 1000);    
+
 }
+
+ //parallax
+ window.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var parallaxElements = document.querySelectorAll('.parallax-image');
+
+    for (var i = 0; i < parallaxElements.length; i++) {
+        var parallaxElement = parallaxElements[i];
+        var parallaxSpeed = 0.5; // Ajusta la velocidad de parallax según sea necesario
+        parallaxElement.style.transform = 'translateY(' + scrollTop * parallaxSpeed + 'px)';
+    }
+});
+
 
 // Llamar a la función para iniciar la cuenta regresiva
 updateCountdown();
