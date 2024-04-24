@@ -48,6 +48,53 @@ function updateCountdown() {
     }
 });
 
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var windowHeight = window.innerHeight;
+
+    var animatedContainers = document.querySelectorAll('.animated-container');
+
+    animatedContainers.forEach(function(container) {
+        var containerTop = container.getBoundingClientRect().top;
+        var containerBottom = container.getBoundingClientRect().bottom;
+
+        // Verificar si el contenedor está completamente visible en la ventana gráfica
+        if (containerTop < windowHeight && containerBottom >= 0 && !container.classList.contains('visible')) {
+            container.classList.add('visible', 'fade-in');
+        }
+    });
+});
+
+// Función para verificar si el elemento está visible en la ventana gráfica
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Función para activar la animación cuando el elemento está visible
+function animateOnScroll() {
+    var animatedContainers = document.querySelectorAll('.animated-container');
+    animatedContainers.forEach(function(container) {
+        if (isElementInViewport(container)) {
+            container.classList.add('visible');
+        } else {
+            container.classList.remove('visible');
+        }
+    });
+}
+
+// Llamar a la función al cargar la página y al hacer scroll
+document.addEventListener('DOMContentLoaded', animateOnScroll);
+window.addEventListener('scroll', animateOnScroll);
+
+
+
+
 
 // Llamar a la función para iniciar la cuenta regresiva
 updateCountdown();

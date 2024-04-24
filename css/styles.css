@@ -23,6 +23,35 @@
     src: url(/fonts/Scandilover\ Script.ttf);
 }
 
+@font-face {
+    font-family: 'blush bold';
+    src: url(/fonts/Star\ Blush\ Serif\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'blush no bold';
+    src: url(/fonts/Star\ Blush\ Serif\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'betterlove';
+    src: url(/fonts/Betterlove.ttf);
+}
+
+@font-face {
+    font-family: 'beatrice';
+    src: url(/fonts/Beatrice\ Clorophil.otf);
+}
+
+@font-face {
+    font-family: 'hand';
+    src: url(/fonts/Hand\ of\ Linda\ Demo.otf);
+}
+
+@font-face {
+    font-family: 'helmor';
+    src: url(/fonts/Helmord.ttf);
+}
 :root {
     --blanco: #ffffff;
     --osucro: #212121;
@@ -74,6 +103,31 @@ body {
 
 
 ---------------
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animated-container {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animated-container.visible {
+    opacity: 1;
+}
+
+
+
+
+---------------
 
 #banner1 {
     background-image: url('/img/banner1.jpg');
@@ -95,15 +149,12 @@ body {
 }
 
 .custom-button:hover {
-    background-color: #8FA57A; /* Color de fondo al pasar el mouse */
+    background-color: #d69494; /* Color de fondo al pasar el mouse */
 }
 
-
-
-
 .versiculo-texto {
-    font-family: 'Roboto', sans-serif; /* Utiliza una fuente elegante */
-    font-size: 18px; /* Tamaño de fuente */
+    font-family: 'blush bold', sans-serif; /* Utiliza una fuente elegante */
+    font-size: 24px; /* Tamaño de fuente */
     text-align: center; /* Justifica el texto */
     margin-top: 25px; /* Espacio superior */
     margin-bottom: 50px; /* Espacio inferior */
@@ -112,7 +163,7 @@ body {
 
 .nombres h1{
     font-family: alinum, sans-serif;
-    font-size: 60px;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
@@ -120,20 +171,20 @@ body {
 }
 
 .nombres p{
-    font-family: 'scandi';
-    font-size: 30px;
+    font-family: 'helmor';
+    font-size: 60px;
     text-align: center;
 }
 
 .palabras h2{
-    font-family: boska-bold, sans-serif;
+    font-family: 'blush bold', sans-serif;
     text-align: center;
     margin-top: 40px;
 }
 
 .palabras p{
-    font-family: boska-medium, sans-serif;
-    font-size: 18px; /* Tamaño de fuente */
+    font-family: 'blush no bold', sans-serif;
+    font-size: 25px; /* Tamaño de fuente */
     text-align: center; /* Justifica el texto */
     margin-top: 25px; /* Espacio superior */
     margin-bottom: 50px; /* Espacio inferior */
@@ -145,9 +196,38 @@ body {
     width: 50%;
 }
 
+/*icono reloj*/
+
+.icon-container {
+    display: flex; /* Utiliza un contenedor flex */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    animation: spin 15s infinite linear; /* Configuración de la animación */
+    scale: 30%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Angulo de inicio */
+    }
+    to {
+        transform: rotate(360deg); /* Angulo de fin */
+    }
+}
+
+
+
+.sup-countdown{
+    font-family: 'helmor', sans-serif;
+    font-size: 60px;
+    color: #333;
+    text-align: center;
+    margin: 2%;
+}
+
 .countdown-container {
-    font-family: TheWeddingSignature, sans-serif;
-    font-size: 100px;
+    font-family: 'helmor', sans-serif;
+    font-size: 50px;
     font-weight: bold;
     color: #333;
     text-align: center;
@@ -161,20 +241,41 @@ body {
     margin-right: auto;
 }
 
+
+.confirma{
+    text-align: center;
+    font-family: 'blush bold', sans-serif;
+    font-size: 30px;
+}
+
+.asistencia{
+    text-align: center;
+    font-family: 'helmor', sans-serif;
+    font-size: 50px;
+}
+
+.hasta{
+    text-align: center;
+    font-family: 'blush no bold', sans-serif;
+    font-size: 20px;
+}
+
 /* Estilo base del botón genérico */
 .generic-button {
     margin-top: 20px;
-    margin-bottom: 60px;
-    font-family: TheWeddingSignature, sans-serif;
+    margin-bottom: 30px;
+    font-family: 'blush no bold', sans-serif;
     background-color: #e0c7c7; /* Color de fondo */
     /*border: 2px solid #007bff; /* Borde sólido */
     border-radius: 20px; /* Borde redondeado */
     color: rgb(0, 0, 0); /* Color del texto */
     padding: 5px 5px; /* Espaciado interno */
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Elimina la subrayado */
     display: inline-block; /* Elemento en línea */
-    font-size: 80px; /* Tamaño de fuente */
+    font-size: 20px; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar */
     transition-duration: 0.4s; /* Duración de la transición */
 }
@@ -187,6 +288,22 @@ body {
 /* Estilo del contenedor del botón */
 .button-container {
     text-align: center; /* Centra horizontalmente el contenido */
+}
+
+.icon-regalo{
+    align-items: ;
+}
+
+.regalo{
+    text-align: center;
+    font-family: 'blush bold', sans-serif;
+    font-size: 30px;
+}
+
+.texto-regalo{
+    text-align: center;
+    font-family: 'blush no bold', sans-serif;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -210,7 +327,7 @@ body {
     }
 
     .centrar-img img{
-        width: 50%;
+        width: 2%;
     }
 }
 
