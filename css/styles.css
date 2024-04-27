@@ -124,18 +124,24 @@ body {
     opacity: 1;
 }
 
-
-
-
----------------
-
-#banner1 {
-    background-image: url('/img/banner1.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    min-height: 800px;
+--------
+.musica h2{
+    font-family: 'blush bold'', sans-seri'f;
+    font-size: 30px;
 }
+
+.musica h3{
+    font-family: 'helmor', sans-serif;
+    font-size: 100px;
+    margin-bottom: -50px;
+}
+
+.musica{
+    text-align: center;
+    font-family: 'blush bold';
+}
+
+
 
 .custom-button {
     background-color: black; /* Color de fondo */
@@ -146,6 +152,7 @@ body {
     transition: background-color 0.3s; /* Transición suave */
     display: block; /* Hace que el botón sea un bloque */
     margin: 20px auto; /* Centra vertical y horizontalmente */
+    margin-top: 4px;
 }
 
 .custom-button:hover {
@@ -187,7 +194,7 @@ body {
     font-size: 25px; /* Tamaño de fuente */
     text-align: center; /* Justifica el texto */
     margin-top: 25px; /* Espacio superior */
-    margin-bottom: 50px; /* Espacio inferior */
+    margin-bottom: -180px; /* Espacio inferior */
     color: #333; /* Color del texto */
 }
 
@@ -223,6 +230,7 @@ body {
     color: #333;
     text-align: center;
     margin: 2%;
+    margin-top: -180px;
 }
 
 .countdown-container {
@@ -241,6 +249,15 @@ body {
     margin-right: auto;
 }
 
+.invitacion img{
+    width: 100%;
+}
+
+.confirmar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 .confirma{
     text-align: center;
@@ -290,22 +307,80 @@ body {
     text-align: center; /* Centra horizontalmente el contenido */
 }
 
-.icon-regalo{
-    align-items: ;
-}
 
 .regalo{
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.regalo h2{
     font-family: 'blush bold', sans-serif;
     font-size: 30px;
 }
 
-.texto-regalo{
-    text-align: center;
+.regalo p{
     font-family: 'blush no bold', sans-serif;
     font-size: 20px;
 }
 
+.dress-code{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.dress-code h2{
+    font-family: 'blush bold', sans-serif;
+    font-size: 30px;
+}
+
+.dress-code h3{
+    font-family: 'helmor', sans-serif;
+    font-size: 50px;
+}
+
+.dress-code p{
+    font-family: 'blush no bold', sans-serif;
+    font-size: 20px;
+}
+
+.drink{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.drink h2{
+    font-family: 'blush bold', sans-serif;
+    font-size: 30px;
+}
+.drink p{
+    font-family: 'blush no bold', sans-serif;
+    font-size: 20px;
+}
+
+.adultos{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.adultos h2{
+    font-family: 'blush bold', sans-serif;
+    font-size: 30px;
+}
+
+.adultos p{
+    font-family: 'blush no bold', sans-serif;
+    font-size: 20px;
+}
 @media only screen and (max-width: 1000px) {
     #banner1 {
         min-height: 300px; /* Ajustar altura del banner para dispositivos móviles */

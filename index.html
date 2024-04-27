@@ -13,7 +13,7 @@
 <body>
     <div class="parallax-container">
         <div class="parallax-image"></div>
-        <img src="/icons/logo blanco.png" class="logo" alt="Logo" />
+        <img src="/icons/logo-final-ayg.svg" class="logo" alt="Logo" />
     </div>
        
 
@@ -22,15 +22,17 @@
         <source src="./song/holy.mp3" type="audio/mpeg">
     </audio>
 
-    <button class="custom-button" onclick="togglePlayPause()">
-        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path d="M8 5v14l11-7z" fill="white" />
-        </svg>
-    </button>
-
-
-
-
+    <div class="musica">
+        
+        <h2><br>ESCUCHA NUESTRA</h2>
+        <h3>Canción</h3>
+        <img src="/icons/iconos-principales/clave-musical.svg" alt="clave" width="25%">
+        <button class="custom-button" onclick="togglePlayPause()">
+            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M8 5v14l11-7z" fill="white" />
+            </svg>
+        </button>
+    </div>
 
     <div class="container animated-container">
         <div class="row justify-content-center">
@@ -106,18 +108,23 @@
 
 
     <div class="icon-container">
-        <img src="/icons/reloj.jpg" alt="Icono">
+        <img src="/icons/iconos-principales/reloj-arena.svg" alt="Icono">
     </div>    
 
     <p class="sup-countdown">Faltan solo...</p>
     <div class="countdown-container" id="countdown"></div>
     
+    <div class="invitacion">
+        <img src="/icons/iconos-principales/1.svg" alt="invitacion" width="100%">
+    </div>
+
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14168.031689230682!2d-55.964377264416484!3d-27.406682293816395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bdf592a921f3%3A0x6c18a29c4644369b!2sQuinta%20Constanza!5e0!3m2!1ses-419!2sar!4v1713312986187!5m2!1ses-419!2sar"
         width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-     <div>
+     <div class="confirmar">
+        <img src="/icons/iconos-principales/corazon-check.svg" alt="corazon" width="15%">
         <p class="confirma">CONFIRMA TU</p>
         <p class="asistencia">asistencia</p>
         <p class="hasta">HASTA EL .../.../... DE JULIO 2024</p>
@@ -127,15 +134,38 @@
         <button class="generic-button">Presiona para confirmar</button>
      </div>
 
+    <div class="regalo">
+        <img src="/icons/iconos-principales/regalo1.svg" alt="regalo" width="25%">
+        <h2>REGALO</h2>
+        <p>SUS BUENOS DESEOS SON SUFICIENTES PARA NOSOTROS Y EN CASO DE HACERNOS UN REGALITO, ESTE PUEDE SER EN EFECTIVO O A TRAVÉS DE BILLETERA VIRTUAL.</p>
 
-    <div class="icon-regalo">
-        <img src="/icons/regalo.jpg" alt="regalo" width="200">
+        <div class="button-container">
+            <button class="generic-button">Presiona para regalar</button>
+        </div>
     </div>
-     <div>
-        <p class="regalo">REGALO</p>
-        <p class="texto-regalo">SUS BUENOS DESEOS SON SUFICIENTES PARA NOSOTROS Y EN CASO DE HACERNOS UN REGALITO, ESTE PUEDE SER EN EFECTIVO O A TRAVÉS DE BILLETERA VIRTUAL.</p>
-        <p>cvu</p>
+
+    <div class="dress-code">
+        <img src="/icons/iconos-principales/ropa1.svg" alt="drescode" width="30%">
+        <h2>DRESS CODE</h2>
+        <H3>Formal de día</H3>
+        <p>PARA ELLAS: VESTIDOS LARGOS O MIDI. <br>
+        PARA ELLOS: CAMISA Y PANTALÓN DE VESTIR.</p>
+        <p><br>NOS RESERVAMOS EL BLANCO PARA LA NOVIA</p>
     </div>
+
+    <div class="drink">
+        <img src="/icons/iconos-principales/vaso1.svg" alt="drink" width="20%">
+        <h2>DRINK'S</h2>
+        <p> DURANTE LA BODA, SE OFRECERÁN BEBIDAS NO ALCOHÓLICAS COMO GASEOSAS, AGUAS SABORIZADAS Y UNA VARIEDAD DE TRAGOS (CON Y SIN ALCOHOL) EN NUESTRA BARRA. 
+            <br> POR LO TANTO, LES EXTENDEMOS LA CORDIAL INVITACIÓN A TRAER BEBIDAS DE SU PREFERENCIA PARA COMPLEMENTAR SU EXPERIENCIA DURANTE LA OCASIÓN.</br>
+        </p>
+    </div>
+
+    <div class="adultos">
+        <h2>SOLO ADULTOS</h2>
+        <p>AMAMOS A SUS PEQUEÑOS PERO QUEREMOS QUE EN ESTE DÍA SOLO TENGAN QUE PREOCUPARSE POR PASARLA INCREÍBLE.</BR></p>
+    </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
