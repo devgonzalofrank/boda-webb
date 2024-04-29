@@ -382,9 +382,13 @@ body {
     font-size: 20px;
 }
 @media only screen and (max-width: 1000px) {
-    #banner1 {
-        min-height: 300px; /* Ajustar altura del banner para dispositivos móviles */
-    }
+   .musica h3 {
+    font-size: 65px;
+   }
+
+   .musica img{
+    scale: 60%;
+   }
 
     .nombres h1 {
         font-size: 300%; /* Reducir tamaño de fuente para dispositivos móviles */
