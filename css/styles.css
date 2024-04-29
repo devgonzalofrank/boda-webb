@@ -126,7 +126,7 @@ body {
 
 --------
 .musica h2{
-    font-family: 'blush bold'', sans-seri'f;
+    font-family: 'blush bold', sans-serif;
     font-size: 30px;
 }
 
@@ -384,6 +384,7 @@ body {
 @media only screen and (max-width: 1000px) {
    .musica h3 {
     font-size: 65px;
+    margin-bottom: -100px;
    }
 
    .musica img{
